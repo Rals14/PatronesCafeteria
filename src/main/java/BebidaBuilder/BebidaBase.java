@@ -14,7 +14,10 @@ public class BebidaBase implements Bebida {
     @Override
     public void setIngredientes(List<String> ingredientes) {
         this.ingredientes = ingredientes;
+    }
 
+    public List<String> getIngredientes() {
+        return ingredientes;
     }
 
     @Override

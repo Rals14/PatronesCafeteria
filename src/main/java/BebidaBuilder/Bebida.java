@@ -8,5 +8,7 @@ public interface Bebida {
 
     void setIngredientes(List<String> ingredientes);
 
+    List<String> getIngredientes();
+
     String toString();
 }

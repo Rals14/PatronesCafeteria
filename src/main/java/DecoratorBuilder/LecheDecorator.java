@@ -2,11 +2,15 @@ package DecoratorBuilder;
 
 import BebidaBuilder.Bebida;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class LecheDecorator extends BebidaDecorator{
     public LecheDecorator(Bebida bebida){
         super(bebida);
+        List<String> ingredientes = new ArrayList<String>(bebida.getIngredientes());
+        ingredientes.add("leche");
+        bebida.setIngredientes(ingredientes);
     }
 
     @Override
@@ -15,8 +19,12 @@ public class LecheDecorator extends BebidaDecorator{
     }
 
     @Override
-    public void setIngredientes(List<String> ingredientes) {
-        bebida.setIngredientes(List.of("leche"));
+    public void setIngredientes(List<String> ingredientes){;
+    }
+
+    @Override
+    public List<String> getIngredientes() {
+        return ingredientes;
     }
 
     @Override
