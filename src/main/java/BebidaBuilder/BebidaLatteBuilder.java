@@ -3,7 +3,7 @@ package BebidaBuilder;
 import java.util.List;
 
 public class BebidaLatteBuilder implements BebidaBuilder {
-    private Bebida latte = new Bebida();
+    private Bebida latte = new BebidaBase();
 
     @Override
     public void agregarBase() {
