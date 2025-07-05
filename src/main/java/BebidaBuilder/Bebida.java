@@ -2,7 +2,7 @@ package BebidaBuilder;
 
 import java.util.List;
 
-public class Bebida {
+public abstract class Bebida {
     String base;
     List<String> ingredientes;
 

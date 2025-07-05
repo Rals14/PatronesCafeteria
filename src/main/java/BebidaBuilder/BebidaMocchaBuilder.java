@@ -3,7 +3,7 @@ package BebidaBuilder;
 import java.util.List;
 
 public class BebidaMocchaBuilder implements BebidaBuilder {
-    private Bebida moccha = new Bebida();
+    private Bebida moccha = new BebidaBase();
 
     @Override
     public void agregarBase() {
