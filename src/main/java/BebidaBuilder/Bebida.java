@@ -2,19 +2,13 @@ package BebidaBuilder;
 
 import java.util.List;
 
-public abstract class Bebida {
-    String base;
-    List<String> ingredientes;
+public interface Bebida {
 
-    public void setBase(String base){
-        this.base = base;
-    }
+    void setBase(String base);
 
-    public void setIngredientes(List<String> ingredientes){
-        this.ingredientes = ingredientes;
-    }
+    void setIngredientes(List<String> ingredientes);
 
-    public String toString() {
-        return "BebidaBuilder.Bebida a base: " + base + " e Ingredientes: " + ingredientes;
-    }
+    List<String> getIngredientes();
+
+    String toString();
 }
