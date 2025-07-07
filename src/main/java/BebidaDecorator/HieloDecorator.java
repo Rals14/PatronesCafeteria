@@ -1,15 +1,15 @@
-package DecoratorBuilder;
+package BebidaDecorator;
 
 import BebidaBuilder.Bebida;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class LecheDecorator extends BebidaDecorator{
-    public LecheDecorator(Bebida bebida){
+public class HieloDecorator extends BebidaDecorator {
+    public HieloDecorator(Bebida bebida){
         super(bebida);
         List<String> ingredientes = new ArrayList<String>(bebida.getIngredientes());
-        ingredientes.add("leche");
+        ingredientes.add("hielo");
         bebida.setIngredientes(ingredientes);
     }
 

@@ -1,8 +1,11 @@
 package BebidaBuilder;
 
+import BebidaObserver.Preparacion;
+
 import java.util.List;
 
 public class BebidaBase implements Bebida {
+    Preparacion preparacion = new Preparacion();
     public String base;
     public List<String> ingredientes;
 
@@ -14,6 +17,7 @@ public class BebidaBase implements Bebida {
     @Override
     public void setIngredientes(List<String> ingredientes) {
         this.ingredientes = ingredientes;
+        preparacion.update("Ingredientes agregados: " + String.join(", ", ingredientes));
     }
 
     public List<String> getIngredientes() {
