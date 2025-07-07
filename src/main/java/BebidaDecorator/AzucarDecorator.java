@@ -9,7 +9,7 @@ public class AzucarDecorator extends BebidaDecorator {
     public AzucarDecorator(Bebida bebida){
         super(bebida);
         List<String> ingredientes = new ArrayList<String>(bebida.getIngredientes());
-        ingredientes.add("azucar");
+        ingredientes.add("azúcar");
         bebida.setIngredientes(ingredientes);
     }
 
