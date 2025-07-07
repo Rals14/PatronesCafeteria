@@ -17,6 +17,7 @@ public class BebidaBase implements Bebida {
     @Override
     public void setIngredientes(List<String> ingredientes) {
         this.ingredientes = ingredientes;
+        // Observador para notificar que se han agregado ingredientes
         preparacion.update("Ingredientes agregados: " + String.join(", ", ingredientes));
     }
 

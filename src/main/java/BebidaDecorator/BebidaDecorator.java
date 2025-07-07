@@ -9,6 +9,7 @@ public abstract class BebidaDecorator implements Bebida {
     public String base;
     public List<String> ingredientes;
 
+    // Decorador que recibe una bebida y agrega ingredientes adicionales
     public BebidaDecorator(Bebida bebida){
         this.bebida = bebida;
     }
