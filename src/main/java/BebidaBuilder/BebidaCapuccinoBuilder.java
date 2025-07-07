@@ -7,12 +7,12 @@ public class BebidaCapuccinoBuilder implements BebidaBuilder {
 
     @Override
     public void agregarBase() {
-        capuccino.setBase("leite vaporizado");
+        capuccino.setBase("leche vaporada");
     }
 
     @Override
     public void agregarIngredientes() {
-        capuccino.setIngredientes(List.of("café expresso", "chocolate em pó", "canela"));
+        capuccino.setIngredientes(List.of("café expresso", "chocolate", "canela"));
     }
 
     @Override

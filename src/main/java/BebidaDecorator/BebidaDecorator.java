@@ -1,4 +1,4 @@
-package DecoratorBuilder;
+package BebidaDecorator;
 
 import BebidaBuilder.Bebida;
 
